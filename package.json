@@ -1,0 +1,30 @@
+{
+  "name": "eval02-piggame",
+  "version": "1.0.0",
+  "description": "Réalisation du jeu pig game pour la seconde évaluation de la plateforme Studi dont le thème est dynamiser un site web avec javascript",
+  "main": "index.js",
+  "scripts": {
+    "serve": "concurrently \"postcss css/tailwind.css -o src/dist/main.min.css --watch\"  \"live-server ./src\"",
+    "dev": "postcss css/tailwind.css -o src/dist/main.min.css",
+    "build": "postcss css/tailwind.css -o src/dist/main.min.css",
+    "start": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ced31-git/ced31-git-ced31-git-StudiEval02_DynamiserUnSiteWeb_JS.git"
+  },
+  "author": "ADORNI Cédric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ced31-git/ced31-git-ced31-git-StudiEval02_DynamiserUnSiteWeb_JS/issues"
+  },
+  "homepage": "https://github.com/ced31-git/ced31-git-ced31-git-StudiEval02_DynamiserUnSiteWeb_JS#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
