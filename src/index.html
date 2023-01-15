@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eval 02 => Pig Game</title>
-    <link rel="stylesheet" href="./dist/main.min.css">
-</head>
-<body>
-    <h1 class="text-4xl underline font-bold text-red-600">Hello World!</h1>
-</body>
+    <link rel="stylesheet" href="./dist/main.min.css" />
+  </head>
+  <body
+    class="w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-[url('/pictures/bg.jpg')] flex items-center justify-center font-lato"
+  >
+    <section class="relative w-[95%] h-[95%] bg-gray-200 flex">
+      <section
+        class="w-1/2 h-full bg-neutral-400 flex flex-col justify-evenly items-center"
+      >
+        <div
+          class="relative text-center w-1/2 sm:w-1/2 lg:w-3/5 xl:w-1/2 2xl:w-3/5 bg-blue-100"
+        >
+          <h2
+            class="text-md sm:text-lg md:text-2xl lg:text-4xl 2xl:text-5xl sm:mb-10 md:mb-14 lg:mb-20 2xl:mb-24 font-bold"
+          >
+            PLAYER 1
+          </h2>
+          <p class="text-red-600 text-lg sm:text-3xl md:text-5xl xl:text-8xl 2xl:text-9xl">0</p>
+          <div
+            class="absolute top-2 right-0 bg-red-600 rounded-full w-2 h-2 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-5 lg:h-5 2xl:w-8 2xl:h-8"
+          ></div>
+        </div>
+        <div
+          class="bg-red-600 w-1/2 sm:w-1/3 py-2 sm:py-4 md:py-6 xl:py-10 flex flex-col justify-center items-center space-y-2 sm:space-y-3.5 md:space-y-5 lg:space-y-10 2xl:space-y-11"
+        >
+          <h3
+            class="text-white text-sm sm:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl"
+          >
+            CURRENT
+          </h3>
+          <p class="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl">0</p>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
