@@ -9,28 +9,95 @@
   </head>
   <body class="body-style">
     <section class="container-game">
-      <section class="player-section">
+      <!-- Player 1 section -->
+      <section id="player--0" class="hidden player-section">
         <div class="container-player">
-          <h2 class="player-txt">PLAYER 1</h2>
-          <p class="party-score">0</p>
-          <div class="hidden"></div>
+          <h2 id="playerName--0" class="player-txt">PLAYER 1</h2>
+          <p id="score--0" class="party-score">0</p>
+          <div id="r-circle" class="hidden circle-r"></div>
         </div>
         <div class="current-score-container">
           <h3 class="current-score-title">CURRENT</h3>
-          <p class="current-score">0</p>
+          <p id="currentScore--0" class="current-score">0</p>
         </div>
       </section>
-      <section class="player-section active-player-bg">
+      <!-- Player 2 section -->
+      <section id="player--1" class="hidden player-section active-player-bg">
         <div class="container-player">
-          <h2 class="player-txt active-player-bold">PLAYER 2</h2>
-          <p class="party-score">0</p>
-          <div class="circle-l"></div>
+          <h2 id="playerName--1" class="player-txt active-player-bold">PLAYER 2</h2>
+          <p id="score--1" class="party-score">0</p>
+          <div id="l-circle" class="circle-l"></div>
         </div>
         <div class="current-score-container">
           <h3 class="current-score-title">CURRENT</h3>
-          <p class="current-score">0</p>
+          <p id="currentScore--1" class="current-score">0</p>
+        </div>
+      </section>
+      <!-- Toggle & Dice section-->
+      <section
+        class="absolute w-full h-full top-0 left-0 flex flex-col items-center justify-around"
+      >
+        <div id="newGame" class="w-full h-20 flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#dc2626"
+            class="w-12 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+
+          <h2  class="text-lg">NEW GAME</h2>
+        </div>
+        <div id="dice-container" class="hidden">
+          <img id="sideOfTheDice" src="./pictures/dice-1.png" alt="random dice picture">
+        </div>
+        <div id="btn-container" class="hidden w-full">
+          <div id="roll" class="w-full h-20 flex items-center justify-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#dc2626"
+              class="w-12 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+              />
+            </svg>
+
+            <h2 class="text-lg">ROLL DICE</h2>
+          </div>
+          <div id="hold" class="w-full h-20 flex items-center justify-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#dc2626"
+              class="w-12 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+              />
+            </svg>
+
+            <h2 class="text-lg">HOLD</h2>
+          </div>
         </div>
       </section>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

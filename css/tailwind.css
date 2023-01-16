@@ -5,17 +5,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 @layer base {
-    .body-style {
-        @apply w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-[url('/pictures/bg.jpg')] flex items-center justify-center font-lato;
-    }
+  .body-style {
+    @apply w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-[url('/pictures/bg.jpg')] flex items-center justify-center font-lato;
+  }
   .container-game {
-    @apply relative w-[95%] h-[95%] bg-gray-200 flex;
+    @apply relative w-[95%] h-[95%] bg-stone-100 flex;
   }
   .player-section {
     @apply flex flex-col justify-evenly items-center w-1/2 h-full;
   }
   .active-player-bg {
-    @apply bg-neutral-400;
+    @apply bg-stone-300;
   }
 
   .container-player {

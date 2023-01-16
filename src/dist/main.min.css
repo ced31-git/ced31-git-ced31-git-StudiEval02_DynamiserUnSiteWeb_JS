@@ -374,7 +374,7 @@ video {
 [hidden] {
   display: none;
 }
-    .body-style {
+  .body-style {
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -392,7 +392,7 @@ video {
   height: 95%;
   width: 95%;
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
   .player-section {
   display: flex;
@@ -404,7 +404,7 @@ video {
 }
   .active-player-bg {
   --tw-bg-opacity: 1;
-  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
 }
 
   .container-player {
@@ -563,44 +563,6 @@ video {
   @media (min-width: 1536px) {
 
   .circle-l {
-    height: 2rem;
-    width: 2rem;
-  }
-}
-  .circle-r {
-  position: absolute;
-  top: 0.5rem;
-  right: 0px;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-  @media (min-width: 640px) {
-
-  .circle-r {
-    height: 0.75rem;
-    width: 0.75rem;
-  }
-}
-  @media (min-width: 768px) {
-
-  .circle-r {
-    height: 0.875rem;
-    width: 0.875rem;
-  }
-}
-  @media (min-width: 1024px) {
-
-  .circle-r {
-    height: 1.25rem;
-    width: 1.25rem;
-  }
-}
-  @media (min-width: 1536px) {
-
-  .circle-r {
     height: 2rem;
     width: 2rem;
   }
@@ -862,8 +824,87 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+.absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.flex {
+  display: flex;
+}
 .hidden {
   display: none;
+}
+.h-full {
+  height: 100%;
+}
+.h-20 {
+  height: 5rem;
+}
+.h-8 {
+  height: 2rem;
+}
+.w-full {
+  width: 100%;
+}
+.w-12 {
+  width: 3rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap")
