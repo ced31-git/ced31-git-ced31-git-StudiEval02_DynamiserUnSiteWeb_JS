@@ -34,6 +34,9 @@
     @apply text-red-600 text-lg sm:text-3xl md:text-5xl xl:text-8xl 2xl:text-9xl;
   }
 
+  .circle-l {
+    @apply absolute top-2 left-0 bg-red-600 rounded-full w-2 h-2 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-5 lg:h-5 2xl:w-8 2xl:h-8;
+  }
   .circle-r {
     @apply absolute top-2 right-0 bg-red-600 rounded-full w-2 h-2 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-5 lg:h-5 2xl:w-8 2xl:h-8;
   }

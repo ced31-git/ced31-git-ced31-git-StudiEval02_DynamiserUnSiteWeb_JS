@@ -525,6 +525,48 @@ video {
   }
 }
 
+  .circle-l {
+  position: absolute;
+  top: 0.5rem;
+  left: 0px;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+  @media (min-width: 640px) {
+
+  .circle-l {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+}
+
+  @media (min-width: 768px) {
+
+  .circle-l {
+    height: 0.875rem;
+    width: 0.875rem;
+  }
+}
+
+  @media (min-width: 1024px) {
+
+  .circle-l {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
+  @media (min-width: 1536px) {
+
+  .circle-l {
+    height: 2rem;
+    width: 2rem;
+  }
+}
   .circle-r {
   position: absolute;
   top: 0.5rem;
@@ -535,7 +577,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
-
   @media (min-width: 640px) {
 
   .circle-r {
@@ -543,7 +584,6 @@ video {
     width: 0.75rem;
   }
 }
-
   @media (min-width: 768px) {
 
   .circle-r {
@@ -551,7 +591,6 @@ video {
     width: 0.875rem;
   }
 }
-
   @media (min-width: 1024px) {
 
   .circle-r {
@@ -559,7 +598,6 @@ video {
     width: 1.25rem;
   }
 }
-
   @media (min-width: 1536px) {
 
   .circle-r {
@@ -823,6 +861,9 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+.hidden {
+  display: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap")
