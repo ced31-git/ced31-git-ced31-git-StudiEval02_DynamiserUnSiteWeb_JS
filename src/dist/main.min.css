@@ -567,6 +567,44 @@ video {
     width: 2rem;
   }
 }
+  .circle-r {
+  position: absolute;
+  top: 0.5rem;
+  right: 0px;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+  @media (min-width: 640px) {
+
+  .circle-r {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+}
+  @media (min-width: 768px) {
+
+  .circle-r {
+    height: 0.875rem;
+    width: 0.875rem;
+  }
+}
+  @media (min-width: 1024px) {
+
+  .circle-r {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+  @media (min-width: 1536px) {
+
+  .circle-r {
+    height: 2rem;
+    width: 2rem;
+  }
+}
 
   .current-score-container {
   display: flex;
@@ -881,11 +919,23 @@ video {
 .h-8 {
   height: 2rem;
 }
+.h-32 {
+  height: 8rem;
+}
+.h-36 {
+  height: 9rem;
+}
 .w-full {
   width: 100%;
 }
 .w-12 {
   width: 3rem;
+}
+.w-32 {
+  width: 8rem;
+}
+.w-36 {
+  width: 9rem;
 }
 .cursor-pointer {
   cursor: pointer;

@@ -24,7 +24,9 @@
       <!-- Player 2 section -->
       <section id="player--1" class="hidden player-section active-player-bg">
         <div class="container-player">
-          <h2 id="playerName--1" class="player-txt active-player-bold">PLAYER 2</h2>
+          <h2 id="playerName--1" class="player-txt active-player-bold">
+            PLAYER 2
+          </h2>
           <p id="score--1" class="party-score">0</p>
           <div id="l-circle" class="circle-l"></div>
         </div>
@@ -37,7 +39,10 @@
       <section
         class="absolute w-full h-full top-0 left-0 flex flex-col items-center justify-around"
       >
-        <div id="newGame" class="w-full h-20 flex items-center justify-center cursor-pointer">
+        <div
+          id="newGame"
+          class="w-full h-20 flex items-center justify-center cursor-pointer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -53,13 +58,20 @@
             />
           </svg>
 
-          <h2  class="text-lg">NEW GAME</h2>
+          <h2 id="newGameTxt" class="text-lg">NEW GAME</h2>
         </div>
-        <div id="dice-container" class="hidden">
-          <img id="sideOfTheDice" src="./pictures/dice-1.png" alt="random dice picture">
+        <div id="dice-container" class="hidden w-36 h-36">
+          <img
+            id="sideOfTheDice"
+            src="./pictures/dice-0.png"
+            alt="random dice picture"
+          />
         </div>
         <div id="btn-container" class="hidden w-full">
-          <div id="roll" class="w-full h-20 flex items-center justify-center cursor-pointer">
+          <div
+            id="roll"
+            class="w-full h-20 flex items-center justify-center cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -77,7 +89,10 @@
 
             <h2 class="text-lg">ROLL DICE</h2>
           </div>
-          <div id="hold" class="w-full h-20 flex items-center justify-center cursor-pointer">
+          <div
+            id="hold"
+            class="w-full h-20 flex items-center justify-center cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -97,6 +112,9 @@
           </div>
         </div>
       </section>
+    </section>
+    <section class="container-win hidden">
+      <h1 class="txt-win"></h1>
     </section>
     <script src="index.js"></script>
   </body>
