@@ -1,6 +1,7 @@
 ## **Evaluation 02: Boosting your websites with Javascript**
 
 ### _Theme: Creating a browser game => Pig Game_
+[Link to the deployed website](https://piggame-eval02studi.netlify.app)
 
 ---
 
