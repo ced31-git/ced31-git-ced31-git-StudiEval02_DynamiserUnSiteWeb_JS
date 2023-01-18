@@ -123,7 +123,8 @@ Reflection on the logic of the project :
 
 Creating a UML diagram (activity diagram).
 
-![activityDiagram](https://user-images.githubusercontent.com/85100991/213178794-52e1433f-9901-4bf4-bfbd-9eafd53a18cc.png)
+![activityDiagram](https://user-images.githubusercontent.com/85100991/213179926-cd7e1bde-0ed9-49aa-b88b-fc89f99784a9.png)
+
 
 
 Deployment of the project :
