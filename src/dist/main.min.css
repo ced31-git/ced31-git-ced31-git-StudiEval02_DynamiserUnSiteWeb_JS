@@ -769,6 +769,67 @@ video {
   }
 }
 
+  .btnDice-section {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+  .container-rules {
+  width: 80%;
+}
+
+  .rules-title {
+  margin-bottom: 3rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+  .btn {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+  .container-win {
+  position: relative;
+  display: flex;
+  height: 95%;
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
+
+  .txt-win {
+  align-self: center;
+  justify-self: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+  .p-txt-win {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -895,62 +956,34 @@ video {
     max-width: 1536px;
   }
 }
-.absolute {
-  position: absolute;
-}
-.top-0 {
-  top: 0px;
-}
-.left-0 {
-  left: 0px;
-}
-.flex {
-  display: flex;
-}
 .hidden {
   display: none;
-}
-.h-full {
-  height: 100%;
-}
-.h-20 {
-  height: 5rem;
 }
 .h-8 {
   height: 2rem;
 }
-.h-32 {
-  height: 8rem;
-}
 .h-36 {
   height: 9rem;
-}
-.w-full {
-  width: 100%;
 }
 .w-12 {
   width: 3rem;
 }
-.w-32 {
-  width: 8rem;
-}
 .w-36 {
   width: 9rem;
+}
+.w-full {
+  width: 100%;
 }
 .cursor-pointer {
   cursor: pointer;
 }
-.flex-col {
-  flex-direction: column;
+.list-decimal {
+  list-style-type: decimal;
 }
-.items-center {
-  align-items: center;
-}
-.justify-center {
-  justify-content: center;
-}
-.justify-around {
-  justify-content: space-around;
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .text-lg {
   font-size: 1.125rem;

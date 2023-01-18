@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,13 +36,40 @@
         </div>
       </section>
       <!-- Toggle & Dice section-->
-      <section
-        class="absolute w-full h-full top-0 left-0 flex flex-col items-center justify-around"
-      >
-        <div
-          id="newGame"
-          class="w-full h-20 flex items-center justify-center cursor-pointer"
-        >
+      <section class="btnDice-section">
+        <div class="container-rules">
+          <h2 class="rules-title">
+            Rules :
+          </h2>
+          <ol class="list-decimal space-y-4">
+            <li>The game includes 2 players on one screen.</li>
+            <li>
+              Each player has a temporary score <strong>(ROUND)</strong> and a
+              global score <strong>(GLOBAL)</strong>.
+            </li>
+            <li>
+              On each turn, the player has his ROUND set to 0 and can roll a die
+              as many times as he wishes. a die as many times as he wishes.
+            </li>
+            <li>The result of a throw is added to the ROUND.</li>
+            <li>During his turn, the player can decide at any time to:</li>
+            <ul>
+              <li>
+                Click on the "Hold" option, which allows you to send the points
+                from the ROUND to the GLOBAL. It will then be the other player's
+                turn.
+              </li>
+              <li>
+                Roll the die. If he rolls a 1, his ROUND score is lost and his
+                turn is over.
+              </li>
+            </ul>
+            <li>
+              The first player to reach 100 points on global wins the game.
+            </li>
+          </ol>
+        </div>
+        <div id="newGame" class="btn cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -68,10 +95,7 @@
           />
         </div>
         <div id="btn-container" class="hidden w-full">
-          <div
-            id="roll"
-            class="w-full h-20 flex items-center justify-center cursor-pointer"
-          >
+          <div id="roll" class="btn cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -89,10 +113,7 @@
 
             <h2 class="text-lg">ROLL DICE</h2>
           </div>
-          <div
-            id="hold"
-            class="w-full h-20 flex items-center justify-center cursor-pointer"
-          >
+          <div id="hold" class="btn cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -115,6 +136,7 @@
     </section>
     <section class="container-win hidden">
       <h1 class="txt-win"></h1>
+      <p class="p-txt-win">For a new game, please refresh the page</p>
     </section>
     <script src="index.js"></script>
   </body>

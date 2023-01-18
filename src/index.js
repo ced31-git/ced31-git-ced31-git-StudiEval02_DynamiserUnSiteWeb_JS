@@ -30,6 +30,8 @@ const sideOfTheDice = document.getElementById("sideOfTheDice");
 //Win section
 const win = document.querySelector(".container-win");
 const txtWin = document.querySelector(".txt-win");
+// Rules div
+const rules = document.querySelector(".container-rules");
 
 //Declaration of variables
 let scores = [0, 0];
@@ -39,19 +41,18 @@ let playing = true;
 
 //--------------------------------------------------------
 //function to determine which of the two players will start first and displays the "playing field" appropriately
-  function firstPlayer() {
-    const randomPlayer = Math.floor(Math.random() * 10 + 1);
+function firstPlayer() {
+  const randomPlayer = Math.floor(Math.random() * 10 + 1);
 
-    if (randomPlayer <= 5) {
-      return (activePlayer = 0);
-    } else {
-      return (activePlayer = 1);
-    }
+  if (randomPlayer <= 5) {
+    return (activePlayer = 0);
+  } else {
+    return (activePlayer = 1);
   }
-  //------------------------------------------------------
+}
+//------------------------------------------------------
 //function to start a new game
 btnNew.addEventListener("click", function newGame() {
-  
   //activePlayer is equal to the condition of the random number firstPlayer
   activePlayer = firstPlayer();
 
@@ -74,6 +75,12 @@ btnNew.addEventListener("click", function newGame() {
 
     //class change for dice container
     diceContainer.classList.remove("hidden");
+
+    //class change for btnNew
+    btnNew.classList.remove("cursor-pointer");
+
+    //Add class for rules
+    rules.classList.add("hidden");
   } else {
     //class changes for player 1
     player1.classList.remove("hidden");
@@ -86,6 +93,12 @@ btnNew.addEventListener("click", function newGame() {
 
     //class change for dice container
     diceContainer.classList.remove("hidden");
+
+    //class change for btnNew
+    btnNew.classList.remove("cursor-pointer");
+
+    //Add class for rules
+    rules.classList.add("hidden");
   }
 
   overallScoreP1.textContent = 0;
@@ -138,6 +151,8 @@ btnHold.addEventListener("click", function () {
     if (scores[activePlayer] >= 100) {
       win.classList.remove("hidden");
       game.classList.add("hidden");
+      let numberPlayer = activePlayer + 1;
+      txtWin.textContent = `Player ${numberPlayer} won this party, congratulations!`;
     } else {
       switchPlayer();
     }
