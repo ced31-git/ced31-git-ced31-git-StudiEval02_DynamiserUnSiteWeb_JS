@@ -52,51 +52,51 @@ During his turn, the player can decide at any time to: 
 1.  Know and use a development environment (2 points).
 2.  Write an algorithm and integrate it into a web page using event-driven scripts and a client-side scripting language (5 points).
 3.  Use of ECMAScript (JS) and DOM standards (5 points).
-4.  Connaissance et utilisation d’un framework de présentation de type adaptatif (5 points).
-5.  Déploiement de la réalisation en ligne (3 points).
+4.  Knowledge and use of an adaptive presentation framework (5 points).
+5.  Deployment of online implementation (3 points).
 
 ---
 
 ## _**The realisation of the project**_
 
---
+---
 
 
-Organisation and implementation of the project :
+\- _**Organisation and implementation of the project :**_
 
-Reading and understanding the project.
-Discovery and choice of the CSS framework .
-Implementation of the project.
-Find the different images used during the project.
-Installing the CSS framework.
-Build the architecture of the page and insert the style.
-Work on the responsiveness of the project.
-Thinking about logic.
-Write the different logics.
-Trying and testing the project.
-Deploy the project.
+1.  Reading and understanding the project.
+2.  Discovery and choice of the CSS framework .
+3.  Implementation of the project.
+4.  Find the different images used during the project.
+5.  Installing the CSS framework.
+6.  Build the architecture of the page and insert the style.
+7.  Work on the responsiveness of the project.
+8.  Thinking about logic.
+9.  Write the different logics.
+10. Trying and testing the project.
+11. Deploy the project.
 
+---
 
-
-Choice of CSS framework :
+\- _**Choice of CSS framework :**_
 
 I chose to start with the TailwindCSS framework in order to discover and practice it throughout a project.
 
+---
 
-
-Implementation of the project :
+\- _**Implementation of the project :**_
 
 Initializing the project with a JSON file
 
-npm init
+```npm init```
 
 Creating a GitHub repository
 Initialising the project with git
 
-git init
+```git init```
 
 Link the local git project with the GitHub repository
-
+```
 echo "# Project" >> README.md
 git init
 git add README.md
@@ -104,29 +104,29 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/ced31-git/Project.git
 git push -u origin main
-
+```
 …or push an existing repository from the command line
-
+```
 git remote add origin https://github.com/ced31-git/Project.git
 git branch -M main
 git push -u origin main
+```
+---
 
-
-
-Installing the CSS framework :
+\- _**Installing the CSS framework :**_
 
 I followed the procedure of xpharsh (https://gist.github.com/xpharsh/929e39f23b2d005c966aa795b6013b02).
 
+---
 
-
-Reflection on the logic of the project :
+\- _**Reflection on the logic of the project :**_
 
 Creating a UML diagram (activity diagram).
 
 ![activityDiagram](https://user-images.githubusercontent.com/85100991/213179926-cd7e1bde-0ed9-49aa-b88b-fc89f99784a9.png)
 
+---
 
-
-Deployment of the project :
+\- _**Deployment of the project :**_
 
 In order to continue my exploration, I decided to put my project online via Netlify .
