@@ -32,6 +32,8 @@ During his turn, the player can decide at any time to: 
 *   Click on the "Hold" option, which sends the points from the ROUND to the GLOBAL. This will be the other player's turn 
 *   Roll the die. If he rolls a 1, his ROUND score is lost and his turn is over.  
     The first player to reach 100 points on the global wins the game.
+    
+![Capture d’écran 2023-01-12 152036](https://user-images.githubusercontent.com/85100991/213177603-c1102fec-bab5-4496-ad08-9812a1046834.png)
 
 ---
 
